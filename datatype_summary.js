@@ -59,3 +59,31 @@ console.log(id === anotherId); //false
 
 const bigNumber = 9044086974743893934908n;
 console.log(typeof bigNumber);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+// Stack AND Heap Memory
+//Stack (Primitive) , Heap (Non-Primitive)
+/*
+    Jab bhi stack memory use hoti hai, jo bhi humne variable declare kia hai uska hume ek copy milta hai
+    and
+    jab bhi ek memory ek heap ke andar define or declare hoti hai, vhan se hume original value ka reference milta hai
+    yha reference se mtlb hai hum jo bhi changes krte hai wo original value me hi karte hai, original value hi change hoti hai
+*/
+
+let myName = "Rohit Kumar Bhardwaj"
+let myAnotherName = myName
+myAnotherName = "Rohit Bhardwaj"
+
+console.log(myName);
+console.log(myAnotherName)
+
+let user1 = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+let user2 = user1
+
+user2.email = "Rohit@gmail.com"
+
+console.log(user1.email);
+console.log(user2.email);

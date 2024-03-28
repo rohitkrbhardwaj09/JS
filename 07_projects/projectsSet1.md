@@ -5,9 +5,9 @@
 
 # Solution code
 
-## Project #1
+## Project #1 - Background Changer
 #### HTML
-```
+```html
  <div class="canvas">
       <h1>Color Scheme Switcher</h1>
       <span class="button" id="grey"></span>
@@ -22,7 +22,7 @@
   </div>
 ```
 #### CSS
-```
+```css
 .canvas {
   display: block;
   text-align: center;
@@ -51,8 +51,8 @@
   background-color: purple;
 }
 ```
-#### Javascript
-```
+#### JavaScript
+```javascript
     const buttons = document.querySelectorAll('.button');
 const body = document.querySelector('body');
 
@@ -74,9 +74,9 @@ buttons.forEach(function (btn) {
 });
 ```
 
-## Project #2
+## Project #2 - BMI Calculator
 #### HTML
-```
+```html
 <div class="container">
       <h1>BMI Calculator</h1>
 
@@ -103,7 +103,7 @@ buttons.forEach(function (btn) {
 ```
 
 #### CSS
-```
+```css
 .container {
   margin: 15px;
 }
@@ -128,8 +128,8 @@ buttons.forEach(function (btn) {
 }
 ```
 
-#### Javascript
-```
+#### JavaScript
+```javascript
 const form = document.querySelector('form');
 form.addEventListener('submit', function (e) {
   e.preventDefault();
@@ -154,4 +154,56 @@ form.addEventListener('submit', function (e) {
     }
   }
 });
+```
+
+
+## Project #3 - Digital Clock
+
+### Solution Code 
+
+#### HTML
+```html
+ <div class="center">
+      <div id="banner"><span>Your local time</span></div>
+      <div id="clock"></div>
+    </div>
+```
+
+#### CSS
+```css
+
+```.center {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 180px;
+}
+#clock {
+  padding: 8px;
+  background-color: brown;
+  color: white;
+  height: 38px;
+  width: 90px;
+  border-radius: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+  border: 2px solid transparent;
+}
+#clock:hover {
+  border: 2px solid tomato;
+}
+```
+
+#### JavaScript
+```javascript
+const clock = document.querySelector('#clock');
+
+setInterval(function () {
+  let date = new Date();
+  clock.innerHTML = date.toLocaleTimeString();
+}, 1000);
+
 ```

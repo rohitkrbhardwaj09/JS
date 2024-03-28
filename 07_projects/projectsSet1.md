@@ -1,10 +1,8 @@
 # Projects related to DOM
 
 ## project link
-[click here to view](https://jsprojects-1vck--8080--d0228c83.local-credentialless.webcontainer.io/)
+[click here to view](https://stackblitzstartersnsjbzj-d22f--8080--d0228c83.local-credentialless.webcontainer.io)
 
-
-[click link 2](https://stackblitzwebcontainerapistart-b2bz--5173--d0228c83.local-credentialless.webcontainer.io/)
 # Solution code
 
 ## project 1
@@ -21,6 +19,7 @@
         Try clicking on one of the colors above
         <span>to change the background color of this page</span>
       </h2>
+  </div>
 ```
 #### CSS
 ```

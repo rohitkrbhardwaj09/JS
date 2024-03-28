@@ -1,7 +1,7 @@
 # Projects related to DOM
 
 ## project link
-[click here to view](https://stackblitzstartersnsjbzj-d22f--8080--d0228c83.local-credentialless.webcontainer.io)
+[click here to view](https://stackblitz.com/edit/stackblitz-starters-nsjbzj?embed=1&file=index.html&view=preview)
 
 # Solution code
 
